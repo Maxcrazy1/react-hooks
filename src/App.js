@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Rol, Imagen, Container, Heading } from "./components/AppStyle";
+import { P, Avatar, Imagen, Container, Heading } from "./components/AppStyle";
 import coinImage from "./coins.png";
 import Home from "./containers/Home";
 import Exchange from "./components/Exchange";
@@ -35,28 +35,36 @@ export default function App() {
   );
   return (
     <Container>
-      <div>
+      <div style={{textAlign:'center'}}>
         <Imagen src={coinImage}></Imagen>
-        <hr />
-        <Rol>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            fugit quas voluptates! Sapiente totam, consectetur repudiandae quos
-            consequuntur dolorum asperiores commodi placeat vero ducimus, quidem
-            distinctio tenetur architecto sunt praesentium. Perferendis
-            necessitatibus labore, praesentium harum perspiciatis pariatur
-            fugiat inventore tenetur culpa neque eligendi earum animi quod
-            obcaecati ea sapiente sunt numquam facere. Magnam, reprehenderit. Ea
-            eos pariatur perferendis accusamus quis? Illo deleniti nulla quam
-            nemo et temporibus voluptatibus porro consectetur ipsa error
-            mollitia voluptates perspiciatis, aliquam aliquid sapiente incidunt,
-            minus reiciendis, eos aut quidem? Doloremque minus sunt explicabo
-            nihil ex? Nulla temporibus laboriosam quos neque, blanditiis eaque.
-            Aspernatur possimus quidem optio quas vitae voluptate libero fugit
-            earum dolor molestiae, sunt repellat itaque omnis, ea illo
-            dignissimos minus! Perferendis, provident amet.
-          </p>
-        </Rol>
+        <Container
+          style={{
+            marginTop: "50px",
+            backgroundColor: "#66a2fe",
+            borderRadius: "8px",
+          }}
+        >
+      <div style={{textAlign:'center'}}>
+            <P>
+              <Avatar src="https://cdn.auth0.com/blog/blog/React-logo.png"></Avatar>{" "}
+              React
+            </P>
+            <P>
+              <Avatar src="https://www.luisllamas.es/wp-content/uploads/2019/05/axios.png"></Avatar>{" "}
+              Axios
+            </P>
+          </div>
+      <div style={{textAlign:'Center'}}>
+            <P>
+              <Avatar src="https://i.morioh.com/2019/11/11/5ffab449766d.jpg"></Avatar>{" "}
+              React Hooks
+            </P>
+            <P>
+              <Avatar src="https://styled-components.com/logo.png"></Avatar>{" "}
+              Styled Components
+            </P>
+          </div>
+        </Container>
       </div>
       <div>
         <Heading>Cryptocurrency prices</Heading>

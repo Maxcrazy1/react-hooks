@@ -19,11 +19,11 @@ function Exchange({ result }) {
   const showToast = (values) => {
     const toPrint = (
       <div>
-        <H4>💰 Now price: {values.PRICE}</H4>
-        <P>💱 From {values.FROMSYMBOL} To {values.TOSYMBOL}</P>
-        <P>👛 Lowest today price: {values.LOWDAY}</P>
-        <P>💹 Highest today price: {values.HIGHDAY}</P>
-        <P>🏧 changes of the day: {values.CHANGEDAY}</P>
+       <H4><span role="img" aria-label="value">💰</span> Now price: {values.PRICE}</H4>
+        <P><span role="img" aria-label="value">💱</span> From {values.FROMSYMBOL} To {values.TOSYMBOL}</P>
+        <P><span role="img" aria-label="value">👛</span> Lowest today price: {values.LOWDAY}</P>
+        <P><span role="img" aria-label="value">💹</span> Highest today price: {values.HIGHDAY}</P>
+        <P><span role="img" aria-label="value">🏧</span> changes of the day: {values.CHANGEDAY}</P>
       </div>
     );
 

@@ -10,13 +10,22 @@ export const Container = styled.div`
   }
 `;
 
-export const Rol = styled.div`
-  column-count: 2;
-  `;
-
 export const Imagen = styled.img`
   max-width: 100%;
   margin-top: 5rem;
+`;
+export const P=styled.p`
+  font-family: "Bebas neue", regular;
+  color:#FFF;
+`;
+
+export const Avatar = styled.img`
+  object-fit: cover;
+  object-position: center center;
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
 `;
 
 export const Heading = styled.h1`
